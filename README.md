@@ -2,6 +2,22 @@
 
 自分専用のAI秘書を作るためのテンプレート一式です。Claude Code公式の標準フォルダ形式に準拠しています。
 
+## 導入（受講生向け）
+
+秘書の仕事場フォルダ（例：`~/ai-secretary`）を作り、その**空フォルダの中で** Claude Code を起動して、こう伝えます：
+
+> このフォルダにスターターキットを展開して。次のコマンドを実行してOKです：
+> `curl -sL https://github.com/kujira-watanabe/ai-secretary-starter-kit/archive/refs/heads/main.tar.gz | tar xz --strip-components=1`
+
+Claude Code が確認を求めてきたら承認 → 展開完了です。`/exit` で一度出て `claude` で入り直し、「あなたは誰？」と聞いて自己紹介が返れば成功。
+
+うまくいかない場合の代替（`git` で丸ごと取得）：
+
+```bash
+git clone https://github.com/kujira-watanabe/ai-secretary-starter-kit.git ai-secretary
+cd ai-secretary && claude
+```
+
 ## フォルダ構成
 
 ```
