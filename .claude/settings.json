@@ -1,0 +1,14 @@
+{
+  "permissions": {
+    "allow": [],
+    "deny": [
+      "Read(.env)",
+      "Read(.env.*)",
+      "Read(**/*.pem)",
+      "Read(**/*credential*)",
+      "Read(**/*password*)",
+      "Bash(rm -rf:*)",
+      "Bash(sudo:*)"
+    ]
+  }
+}

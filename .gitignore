@@ -1,0 +1,10 @@
+# 秘密情報は絶対にコミットしない（.claude/settings.json の deny と二重防御）
+.env
+.env.*
+*.pem
+*.key
+*credential*
+# OS / エディタ
+.DS_Store
+Thumbs.db
+node_modules/
