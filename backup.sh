@@ -7,10 +7,10 @@ set -euo pipefail
 SOURCE="$(cd "$(dirname "$0")" && pwd)/"
 
 # バックアップ先（Windowsの場合: Dドライブ。Macの場合は例を参考に書き換える）
-DESTINATION="/mnt/d/AI-secretary-backup/"
+DESTINATION="/mnt/c/AI-secretary-backup/"
 # Macの例: DESTINATION="$HOME/Backups/ai-secretary/"
 
-if [ ! -d "$(dirname "$DESTINATION")" ] && [ ! -d /mnt/d ]; then
+if [ ! -d "$(dirname "$DESTINATION")" ] && [ ! -d /mnt/c ]; then
   echo "バックアップ先が見つかりません。backup.sh の DESTINATION を編集してください。"
   exit 1
 fi
